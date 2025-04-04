@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html">FitLife</a></div>
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+        <label for="burger-toggle" class="burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="nav">
+            <a href="#benefits" onclick="document.getElementById('burger-toggle').checked = false">Преимущества</a>
+            <a href="#screenshots" onclick="document.getElementById('burger-toggle').checked = false">Скриншоты</a>
+            <a href="#reviews" onclick="document.getElementById('burger-toggle').checked = false">Отзывы</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <h1>Преобрази свое тело</h1>
+        <p>FitLife — это персональный тренер в твоем кармане. Индивидуальные программы тренировок, отслеживание
+            прогресса и мотивация каждый день.</p>
+        <button class="btn-first" onclick="location.href='#info'">Скачать сейчас</button>
+        <button class="btn-second" onclick="location.href='#benefits'">Узнать больше</button>
+    </section>
+
+    <section class="benefits" id="benefits">
+        <h1>Почему выбирают FitLife</h1>
+        <div class="feature-cards">
+            <div class="card">
+                <div class="icon">🏋️</div>
+                <h3>Персональные тренировки</h3>
+                <p>Программа адаптируется под ваш уровень подготовки и цели. Более 500 упражнений с видеоинструкциями.
+                </p>
+            </div>
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Детальная статистика</h3>
+                <p>Отслеживайте прогресс по калориям, весу, объёмам и силовым показателям. Интеграция с Apple Health и
+                    Google Fit.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🍎</div>
+                <h3>План питания</h3>
+                <p>Индивидуальный рацион с учетом ваших предпочтений и аллергий. Более 1000 рецептов здоровых блюд.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🏆</div>
+                <h3>Мотивация</h3>
+                <p>Ежедневные челленджи, награды за достижения и соревнования с друзьями. Поддержка комьюнити.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🧘</div>
+                <h3>Ментальное здоровье</h3>
+                <p>Медитации, дыхательные практики и программы для снижения стресса. Забота не только о теле, но и о
+                    разуме.
+                </p>
+            </div>
+            <div class="card">
+                <div class="icon">🔄</div>
+                <h3>Синхронизация</h3>
+                <p>Работает на всех устройствах. Начните тренировку на телефоне, продолжите на планшете или smart-ТВ.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="screenshots" id="screenshots">
+        <h1>Как выглядит приложение</h1>
+        <div class="grid-screenshots">
+            <div class="card-screenshots">
+                <h2>Экран приложения</h2>
+                <img src="images/img1.png" alt="img1">
+            </div>
+            <div class="card-screenshots">
+                <h2>Тренировки</h2>
+                <img src="images/img2.png" alt="img2">
+            </div>
+            <div class=" card-screenshots">
+                <h2>Питание</h2>
+                <img src="images/img3.png" alt="img3">
+            </div>
+            <div class="card-screenshots">
+                <h2>Прогресс</h2>
+                <img src="images/img4.png" alt="img4">
+            </div>
+            <div class="card-screenshots">
+                <h2>Сообщество</h2>
+                <img src="images/img5.png" alt="img5">
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <h1>Отзывы пользователей</h1>
+        <div class="grid-reviews">
+            <div class="card-reviews">
+                <div class="review-header">
+                    <div class="flex-items">
+                        <img src="images/user1.jpg" alt="user1">
+                        <div class="user-review">
+                            <h3>Анна К.</h3>
+                            <p>Пользователь 2 года</p>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>"Сбросила 15 кг за полгода! Никогда не думала, что тренировки могут быть такими интересными.
+                            Особенно нравятся еженедельные челленджи."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-reviews">
+                <div class="review-header">
+                    <div class="flex-items">
+                        <img src="images/user2.jpg" alt="user2">
+                        <div class="user-review">
+                            <h3>Дмитрий С.</h3>
+                            <p>Пользователь 1 год</p>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★☆
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>"Как тренер могу сказать — приложение действительно профессиональное. Рекомендую клиентам для
+                            домашних тренировок."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-reviews">
+                <div class="review-header">
+                    <div class="flex-items">
+                        <img src="images/user3.jpg" alt="user3">
+                        <div class="user-review">
+                            <h3>Елена П.</h3>
+                            <p>Пользователь 3 месяца</p>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>"План питания — просто спасение! Никаких сложных рецептов, всё доступно и вкусно. За месяц
+                            ушло 5 см с талии."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-reviews">
+                <div class="review-header">
+                    <div class="flex-items">
+                        <img src="images/user4.jpg" alt="user4">
+                        <div class="user-review">
+                            <h3>Иван Л.</h3>
+                            <p>Пользователь 6 месяцев</p>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>"После травмы колена боялся тренироваться. FitLife подобрал безопасные упражнения, теперь
+                            снова в форме!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-reviews">
+                <div class="review-header">
+                    <div class="flex-items">
+                        <img src="images/user5.jpg" alt="user4">
+                        <div class="user-review">
+                            <h3>Максим И.</h3>
+                            <p>Пользователь 8 месяцев</p>
+                        </div>
+                        <div class="review-rating">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>"Приложение реально мотивирует! Автоматически подстраивает сложность тренировок под мои
+                            успехи. За 4 месяца увеличил жим лежа на 15 кг!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info" id="info">
+        <div class="grid-info">
+            <div class="card-info">
+                <h3>FitLife</h3>
+                <p>Ваш персональный тренер в кармане. Тренируйтесь где угодно и когда угодно.</p>
+                <div class="icons">
+                    <div class="icon">📱</div>
+                    <div class="icon">📘</div>
+                    <div class="icon">📸</div>
+                    <div class="icon">🐦</div>
+                </div>
+            </div>
+            <div class="card-info">
+                <h3>Разделы</h3>
+                <a href="#benefits" class="text">Возможности</a>
+                <a href="#screenshots" class="text">Скриншоты</a>
+                <a href="#reviews" class="text">Отзывы</a>
+                <a href="#hero" class="text">Скачать</a>
+            </div>
+            <div class="card-info">
+                <h3>Поддержка</h3>
+                <a href="#hero" class="text">FAQ</a>
+                <a href="#hero" class="text">Контакты</a>
+                <a href="#hero" class="text">Политика конфиденциальности</a>
+                <a href="#hero" class="text">Условия использования</a>
+            </div>
+            <div class="card-info">
+                <h3>Скачать</h3>
+                <p>Доступно для iOS и Android</p>
+                <button class="btn-first-info" onclick="location.href='#hero'">App Store</button>
+                <button class="btn-second-info" onclick="location.href='#hero'">Google Play</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 FitLife. Все права защищены.</p>
+        <p>Телефон: +7 (123) 456-7890</p>
+    </footer>
+</body>
+
+</html>
