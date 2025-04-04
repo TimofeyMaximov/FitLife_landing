@@ -310,12 +310,6 @@ nav a:hover {
     overflow-x: scroll;
 }
 
-.review-header {
-    margin: 10px;
-    min-height: 250px;
-    height: auto;
-}
-
 .review-header img {
     width: 100px;
     height: 100px;
@@ -331,6 +325,9 @@ nav a:hover {
     text-align: center;
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    max-height: 250px;
+    height: auto;
 }
 
 .flex-items {
