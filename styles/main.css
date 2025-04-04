@@ -301,6 +301,12 @@ nav a:hover {
     padding: 30px;
 }
 
+.card-reviews {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
 .grid-reviews {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -308,6 +314,12 @@ nav a:hover {
     padding: 15px;
     margin: 0 auto;
     overflow-x: scroll;
+}
+
+.review-header {
+    margin: 10px;
+    max-height: 250px;
+    height: auto;
 }
 
 .review-header img {
@@ -325,9 +337,6 @@ nav a:hover {
     text-align: center;
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 10px;
-    max-height: 250px;
-    height: auto;
 }
 
 .flex-items {
@@ -338,6 +347,10 @@ nav a:hover {
 .user-review,
 .review-text {
     padding: 10px;
+}
+
+.review-text {
+    overflow-y: auto;
 }
 
 .review-rating {
