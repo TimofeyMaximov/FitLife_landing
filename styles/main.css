@@ -510,18 +510,20 @@ footer {
 
     @keyframes wave {
         from {
-            letter-spacing: 1px;
+            letter-spacing: 0px;
         }
 
         to {
-            letter-spacing: 3px;
+            letter-spacing: 2px;
         }
+
     }
 
     .hero h1 {
-        animation: wave 3s infinite ease-out;
+        white-space: nowrap;
+        font-size: 2rem;
+        animation: wave 3s infinite ease;
     }
-
 }
 
 
@@ -532,7 +534,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .hero h1,
     .benefits h1,
     .screenshots h1,
     .reviews h1 {
