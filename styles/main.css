@@ -123,13 +123,17 @@ nav a:hover {
     padding: 20px;
 }
 
-@keyframes wave {
-    from {
-        letter-spacing: 2px;
+@keyframes gentlePulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 
-    to {
-        letter-spacing: 8px;
+    50% {
+        opacity: 0.9;
+        transform: scale(1.25);
     }
 }
 
@@ -137,12 +141,12 @@ nav a:hover {
     background: linear-gradient(45deg, #00ffcc, #ff007f);
     background-clip: text;
     color: transparent;
-    animation-name: wave;
-    animation-duration: 3s;
+    animation-name: gentlePulse;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     font-size: 60px;
     text-align: center;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     padding: 0 20px;
 }
 
@@ -500,6 +504,7 @@ footer {
     .reviews h1 {
         font-size: 2.5rem;
     }
+
 }
 
 @media (max-width:580px) {
@@ -507,6 +512,7 @@ footer {
         height: auto;
         padding: 15px;
     }
+
 
     @keyframes gentlePulse {
 
@@ -523,10 +529,9 @@ footer {
     }
 
     .hero h1 {
-        animation: gentlePulse 3s infinite ease-in-out;
+        animation: gentlePulse 4s infinite ease-in-out;
         font-size: 1.8rem;
     }
-
 }
 
 
