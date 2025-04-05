@@ -508,21 +508,8 @@ footer {
         padding: 15px;
     }
 
-    @keyframes wave {
-
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-
-        50% {
-            transform: scale(1.05);
-            opacity: 0.9;
-        }
-    }
-
     .hero h1 {
-        animation: wave 3s infinite ease-in-out;
+        animation: none;
     }
 
 }
