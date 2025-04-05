@@ -316,6 +316,12 @@ nav a:hover {
     overflow-x: scroll;
 }
 
+.review-header {
+    margin: 10px;
+    max-height: 250px;
+    height: auto;
+}
+
 .review-header img {
     width: 100px;
     height: 100px;
@@ -331,9 +337,6 @@ nav a:hover {
     text-align: center;
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.1);
-     margin: 10px;
-    max-height: 250px;
-    height: auto;
 }
 
 .flex-items {
@@ -504,6 +507,21 @@ footer {
         height: auto;
         padding: 15px;
     }
+
+    @keyframes wave {
+        from {
+            letter-spacing: 1px;
+        }
+
+        to {
+            letter-spacing: 3px;
+        }
+    }
+
+    .hero h1 {
+        animation: wave 3s infinite ease-out;
+    }
+
 }
 
 
