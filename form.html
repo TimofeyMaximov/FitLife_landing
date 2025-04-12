@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="wrapper-form">
+        <fieldset class="fieldset">
+            <legend class="legend">Downloading</legend>
+            <label for="name" class="form__text">Имя</label>
+            <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+            <label for="surname" class="form__text">Фамилия</label>
+            <input type="text" name="surname" id="surname" placeholder="Ваша фамилия" required>
+            <label for="email" class="form__text">Email</label>
+            <input type="email" name="email" id="email" placeholder="Введите email" required>
+            <div class="checkbox-wrapper">
+                <label>
+                    <input type="checkbox" name="terms" id="terms">
+                    <span class="text__terms">Я соглашаюсь с <a href="#" class="link-terms">условиями участия</a></span>
+                </label>
+            </div>
+            <a href="files/FitLife.pdf" download class="submit__button">Скачать</a>
+            <a href="index.html" class="submit__button">Назад</a>
+        </fieldset>
+    </div>
+</body>
+
+</html>
