@@ -24,6 +24,7 @@ header {
   z-index: 1;
   padding: 20px;
 }
+
 header .logo a {
   text-decoration: none;
   background: linear-gradient(45deg, #00ffcc, #ff007f);
@@ -31,21 +32,26 @@ header .logo a {
   background-clip: text;
   color: transparent;
 }
+
 header nav {
   margin-left: auto;
 }
+
 header nav a {
   text-decoration: none;
   padding: 30px;
   color: #ffffff;
   font-size: 18px;
 }
+
 header nav a:hover {
   color: #00ffcc;
 }
+
 header .burger-toggle {
   display: none;
 }
+
 header .burger-btn {
   display: none;
   position: relative;
@@ -56,6 +62,7 @@ header .burger-btn {
   justify-content: space-between;
   cursor: pointer;
 }
+
 header .burger-btn span {
   display: block;
   width: 100%;
@@ -63,14 +70,17 @@ header .burger-btn span {
   background: #ffffff;
   transition: all 0.3s;
 }
+
 header .nav {
   display: flex;
   gap: 20px;
 }
+
 @media (max-width: 768px) {
   header .burger-btn {
     display: flex;
   }
+
   header .nav {
     position: fixed;
     top: 0;
@@ -85,16 +95,20 @@ header .nav {
     transition: transform 0.3s;
     z-index: 1000;
   }
-  header .burger-toggle:checked ~ .nav {
+
+  header .burger-toggle:checked~.nav {
     transform: translateX(0);
   }
-  header .burger-toggle:checked ~ .burger-btn span:nth-child(1) {
+
+  header .burger-toggle:checked~.burger-btn span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
-  header .burger-toggle:checked ~ .burger-btn span:nth-child(2) {
+
+  header .burger-toggle:checked~.burger-btn span:nth-child(2) {
     opacity: 0;
   }
-  header .burger-toggle:checked ~ .burger-btn span:nth-child(3) {
+
+  header .burger-toggle:checked~.burger-btn span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
@@ -111,15 +125,19 @@ header .nav {
 }
 
 @keyframes gentlePulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.9;
     transform: scale(1.25);
   }
 }
+
 .hero h1 {
   background: linear-gradient(45deg, #00ffcc, #ff007f);
   background-clip: text;
@@ -132,6 +150,7 @@ header .nav {
   animation-timing-function: ease-in-out;
   padding: 0 20px;
 }
+
 .hero h1:hover {
   animation-play-state: paused;
 }
@@ -157,6 +176,7 @@ header .nav {
   border: 3px solid #00ffcc;
   margin-top: 30px;
 }
+
 .btn-first:hover {
   box-shadow: 0 0 15px #00ffcc;
   background-color: #00ffcc;
@@ -168,6 +188,7 @@ header .nav {
   color: #ff007f;
   border: 3px solid #ff007f;
 }
+
 .btn-second:hover {
   box-shadow: 0 0 15px #ff007f;
   background-color: #ff007f;
@@ -212,6 +233,7 @@ header .nav {
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .card:hover {
   box-shadow: 0 0 15px #00ffcc;
   transform: translateY(-10px);
@@ -250,6 +272,7 @@ header .nav {
   max-width: 300px;
   height: 100%;
 }
+
 .card-screenshots:hover {
   transform: translateX(-10px);
 }
@@ -274,17 +297,20 @@ header .nav {
   min-height: 80vh;
   padding: 20px;
 }
+
 .reviews h1 {
   text-align: center;
   color: #ffffff;
   font-size: clamp(1.8rem, 5.5vw, 60px);
   padding: 30px;
 }
+
 .reviews .card-reviews {
   height: 300px;
   display: flex;
   flex-direction: column;
 }
+
 .reviews .grid-reviews {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -293,6 +319,7 @@ header .nav {
   margin: 0 auto;
   overflow-x: scroll;
 }
+
 .reviews .review-header {
   margin: 10px;
   max-height: 250px;
@@ -304,6 +331,7 @@ header .nav {
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .reviews .review-header img {
   width: 100px;
   height: 100px;
@@ -311,17 +339,21 @@ header .nav {
   margin: 1%;
   border: 3px solid #00ffcc;
 }
+
 .reviews .flex-items {
   display: flex;
   align-items: center;
 }
+
 .reviews .user-review,
 .reviews .review-text {
   padding: 10px;
 }
+
 .reviews .review-text {
   overflow-y: auto;
 }
+
 .reviews .review-rating {
   margin: 10px;
   color: #ff007f;
@@ -334,6 +366,7 @@ header .nav {
   gap: 15px;
   background-color: rgba(255, 255, 255, 0.05);
 }
+
 .grid-info .card-info {
   display: flex;
   align-items: center;
@@ -341,20 +374,24 @@ header .nav {
   padding: 20px;
   justify-content: center;
 }
+
 .grid-info .card-info .icons {
   display: flex;
   gap: 10px;
 }
+
 .grid-info .card-info h3 {
   color: #00ffcc;
   font-size: 1.8rem;
 }
+
 .grid-info .card-info p {
   color: #ffffff;
   padding: 3px;
   font-size: 1rem;
   text-align: center;
 }
+
 .grid-info .text {
   color: #ffffff;
   text-decoration: none;
@@ -362,9 +399,11 @@ header .nav {
   opacity: 0.7;
   font-size: 1rem;
 }
+
 .grid-info .text:hover {
   color: #00ffcc;
 }
+
 .grid-info .card-info button {
   padding: 15px;
   border-radius: 20px;
@@ -372,23 +411,27 @@ header .nav {
   font-size: 1rem;
   width: 150px;
 }
+
 .grid-info .btn-first-info {
   background-color: rgba(255, 255, 255, 0.05);
   color: #00ffcc;
   border: 3px solid #00ffcc;
   margin-top: 20px;
 }
+
 .grid-info .btn-first-info:hover {
   box-shadow: 0 0 15px #00ffcc;
   background-color: #00ffcc;
   color: rgba(255, 255, 255, 0.05);
 }
+
 .grid-info .btn-second-info {
   background-color: rgba(255, 255, 255, 0.05);
   color: #ff007f;
   border: 3px solid #ff007f;
   margin-top: 20px;
 }
+
 .grid-info .btn-second-info:hover {
   box-shadow: 0 0 15px #ff007f;
   background-color: #ff007f;
@@ -415,83 +458,104 @@ footer {
   .feature-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .grid-screenshots {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 1020px) {
   .feature-cards {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 905px) {
   .grid-screenshots {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .card-screenshots {
     max-width: none;
   }
+
   .card-screenshots h2 {
     min-height: 4em;
   }
 }
+
 @media (max-width: 780px) {
   .grid-screenshots {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 580px) {
   header {
     height: auto;
     padding: 15px;
   }
+
   @keyframes gentlePulse {
-    0%, 100% {
+
+    0%,
+    100% {
       opacity: 1;
       transform: scale(1);
     }
+
     50% {
       opacity: 0.9;
       transform: scale(1.2);
     }
   }
+
   .hero h1 {
     animation: gentlePulse 4s infinite ease-in-out;
     font-size: 1.8rem;
   }
 }
+
 @media (max-width: 500px) {
   .grid-screenshots {
     grid-template-columns: 1fr;
   }
+
   .hero p {
     font-size: 1.2rem;
   }
 }
+
 @media (max-width: 475px) {
   .grid-info {
     grid-template-columns: 1fr;
   }
+
   .card {
     padding: 20px 15px;
   }
 }
+
 @media (max-width: 306px) {
   nav {
     text-align: center;
   }
 }
+
 @media (max-width: 263px) {
   body {
     min-width: 263px;
   }
+
   .grid-screenshots {
     grid-template-columns: 1fr;
     padding: 5px;
   }
+
   .card-screenshots {
     max-width: 200px;
   }
+
   .card-screenshots h2 {
     font-size: 1.2rem;
   }
