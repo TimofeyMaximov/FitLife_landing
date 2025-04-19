@@ -1,0 +1,27 @@
+@mixin Header_Footer {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    height: 10svh;
+    width: 100%;
+}
+
+@mixin Hero_Benefits {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@mixin Flex_center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin Grid_five-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
