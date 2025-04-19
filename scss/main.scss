@@ -191,40 +191,40 @@ header {
 
 .benefits {
     @include Hero_Benefits();
+}
 
-    .feature-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        padding: 15px;
-        gap: 15px;
-        margin: 0 auto;
-    }
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+    margin: 0 auto;
+}
 
-    h1 {
-        text-align: center;
-        color: #ffffff;
-        font-size: clamp(1.8rem, 5.5vw, 60px);
-        padding: 0 20px;
-    }
+.benefits h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: clamp(1.8rem, 5.5vw, 60px);
+    padding: 0 20px;
+}
 
-    .icon {
-        font-size: 35px;
-    }
+.icon {
+    font-size: 35px;
+}
 
-    .card {
-        background-color: rgba(255, 255, 255, 0.05);
-        border-radius: 20px;
-        padding: 30px;
-        text-align: center;
-        transition: 0.3s;
-        color: #ffffff;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 
-        &:hover {
-            box-shadow: 0 0 15px $firtsBTNColor;
-            transform: translateY(-10px);
-        }
+    &:hover {
+        box-shadow: 0 0 15px $firtsBTNColor;
+        transform: translateY(-10px);
     }
 }
 
@@ -233,50 +233,50 @@ header {
     padding: 20px;
     @include Flex_center;
     flex-direction: column;
+}
 
-    h1 {
-        text-align: center;
-        color: #ffffff;
-        font-size: clamp(1.8rem, 5.5vw, 60px);
+.screenshots h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: clamp(1.8rem, 5.5vw, 60px);
+}
+
+.grid-screenshots {
+    @include Grid_five-columns;
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+    justify-items: center;
+    align-items: start;
+}
+
+.card-screenshots {
+    transition: transform 0.3s ease;
+    @include Flex_center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+
+    &:hover {
+        transform: translateX(-10px);
     }
+}
 
-    .grid-screenshots {
-        @include Grid_five-columns;
-        width: 100%;
-        padding: 15px;
-        gap: 15px;
-        justify-items: center;
-        align-items: start;
+.card-screenshots h2 {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    min-height: 3.5em;
+}
 
-        .card-screenshots {
-            transition: transform 0.3s ease;
-            @include Flex_center;
-            flex-direction: column;
-            width: 100%;
-            max-width: 300px;
-            height: 100%;
-
-            &:hover {
-                transform: translateX(-10px);
-            }
-        }
-
-        .card-screenshots h2 {
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-            font-size: 1.5rem;
-            min-height: 3.5em;
-        }
-
-        .card-screenshots img {
-            max-width: 300px;
-            height: auto;
-            width: 100%;
-            border-radius: 20px;
-            object-fit: cover;
-        }
-    }
+.card-screenshots img {
+    max-width: 300px;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .reviews {
