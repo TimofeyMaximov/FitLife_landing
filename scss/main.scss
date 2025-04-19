@@ -349,80 +349,80 @@ header {
     width: 100%;
     gap: 15px;
     background-color: $rgbBG;
+}
 
-    .card-info {
-        @include Flex_center;
-        flex-direction: column;
-        padding: 20px;
-        justify-content: center;
+.card-info {
+    @include Flex_center;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
 
-        .icons {
-            display: flex;
-            gap: 10px;
-        }
-
-
-        h3 {
-            color: $firtsBTNColor;
-            font-size: 1.8rem;
-        }
-
-        p {
-            color: #ffffff;
-            padding: 3px;
-            font-size: 1rem;
-            text-align: center;
+.icons {
+    display: flex;
+    gap: 10px;
+}
 
 
-        }
-    }
+.card-info h3 {
+    color: $firtsBTNColor;
+    font-size: 1.8rem;
+}
 
-    .text {
-        color: #ffffff;
-        text-decoration: none;
-        padding: 3px;
-        opacity: 0.7;
-        font-size: 1rem;
+.card-info p {
+    color: #ffffff;
+    padding: 3px;
+    font-size: 1rem;
+    text-align: center;
+}
 
-        &:hover {
-            color: $firtsBTNColor;
-        }
-    }
 
-    .card-info button {
-        padding: 15px;
-        border-radius: 20px;
-        transition: 0.3s;
-        font-size: 1rem;
-        width: 150px;
-    }
+.text {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 3px;
+    opacity: 0.7;
+    font-size: 1rem;
 
-    .btn-first-info {
-        background-color: $rgbBG;
+    &:hover {
         color: $firtsBTNColor;
-        border: 3px solid $firtsBTNColor;
-        margin-top: 20px;
-
-        &:hover {
-            box-shadow: 0 0 15px $firtsBTNColor;
-            background-color: $firtsBTNColor;
-            color: $rgbBG;
-        }
-    }
-
-    .btn-second-info {
-        background-color: $rgbBG;
-        color: $secondBTNColor;
-        border: 3px solid $secondBTNColor;
-        margin-top: 20px;
-
-        &:hover {
-            box-shadow: 0 0 15px $secondBTNColor;
-            background-color: $secondBTNColor;
-            color: $rgbBG;
-        }
     }
 }
+
+.card-info button {
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 1rem;
+    width: 150px;
+}
+
+.btn-first-info {
+    background-color: $rgbBG;
+    color: $firtsBTNColor;
+    border: 3px solid $firtsBTNColor;
+    margin-top: 20px;
+
+    &:hover {
+        box-shadow: 0 0 15px $firtsBTNColor;
+        background-color: $firtsBTNColor;
+        color: $bgColor;
+    }
+}
+
+.btn-second-info {
+    background-color: $rgbBG;
+    color: $secondBTNColor;
+    border: 3px solid $secondBTNColor;
+    margin-top: 20px;
+
+    &:hover {
+        box-shadow: 0 0 15px $secondBTNColor;
+        background-color: $secondBTNColor;
+        color: $bgColor;
+    }
+}
+
 
 footer {
     @include Header_Footer;
