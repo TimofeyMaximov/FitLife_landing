@@ -373,7 +373,7 @@ header .nav {
   width: 150px;
 }
 .grid-info .btn-first-info {
-  background-color: #0a0a0a;
+  background-color: rgba(255, 255, 255, 0.05);
   color: #00ffcc;
   border: 3px solid #00ffcc;
   margin-top: 20px;
@@ -381,10 +381,10 @@ header .nav {
 .grid-info .btn-first-info:hover {
   box-shadow: 0 0 15px #00ffcc;
   background-color: #00ffcc;
-  color: #0a0a0a;
+  color: rgba(255, 255, 255, 0.05);
 }
 .grid-info .btn-second-info {
-  background-color: #0a0a0a;
+  background-color: rgba(255, 255, 255, 0.05);
   color: #ff007f;
   border: 3px solid #ff007f;
   margin-top: 20px;
@@ -392,7 +392,7 @@ header .nav {
 .grid-info .btn-second-info:hover {
   box-shadow: 0 0 15px #ff007f;
   background-color: #ff007f;
-  color: #0a0a0a;
+  color: rgba(255, 255, 255, 0.05);
 }
 
 footer {
